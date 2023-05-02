@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Arithmetic_Unit.srcs/sources_1/new/AU.vhd" \
+"../../../../../Ripple Carry Adder/sources/FA.vhd" \
+"../../../../../Ripple Carry Adder/sources/HA.vhd" \
+"../../../../../Ripple Carry Adder/sources/RCA_4.vhd" \
+"../../../../Arithmetic_Unit.srcs/sources_1/new/Reg.vhd" \
+"../../../../../Counter/sources/Slow_Clk.vhd" \
+"../../../../Arithmetic_Unit.srcs/sim_1/new/AU_Sim.vhd" \
+
+# Do not sort compile order
+nosort
