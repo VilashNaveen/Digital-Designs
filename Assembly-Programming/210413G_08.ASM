@@ -9,7 +9,7 @@ Start:
 	
 	MOV DL,9
 rep:
-	DEC DL
+	DEC DL		; loop for 10 cycles
 	JNZ rep
 		
 	MOV AL,48	
@@ -19,7 +19,7 @@ rep:
 
 	MOV DL,4
 rep2:
-	DEC DL
+	DEC DL		; loop for 5 cycles
 	JNZ rep2
 	
 	JMP start
