@@ -32,19 +32,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity RCA_4 is
- Port ( A0 : in STD_LOGIC;
-     A1 : in STD_LOGIC;
-     A2 : in STD_LOGIC;
-     A3 : in STD_LOGIC;
-     B0 : in STD_LOGIC;
-     B1 : in STD_LOGIC;
-     B2 : in STD_LOGIC;
-     B3 : in STD_LOGIC;
+ Port ( A : in STD_LOGIC_VECTOR (3 downto 0);
+        S : out STD_LOGIC_VECTOR (3 downto 0);
      C_in : in STD_LOGIC;
-     S0 : out STD_LOGIC;
-     S1 : out STD_LOGIC;
-     S2 : out STD_LOGIC;
-     S3 : out STD_LOGIC;
+     B : in STD_LOGIC_VECTOR (3 downto 0);
      C_out : out STD_LOGIC);
 end RCA_4;
 
@@ -63,30 +54,30 @@ architecture Behavioral of RCA_4 is
 begin
     FA_0 : FA
         port map (
-            A => A0,
-            B => B0,
-            C_in => '0', -- Set to ground
-            S => S0,
+            A => A(0),
+            B => B(0),
+            C_in => '1',
+            S => S(0),
             C_Out => FA0_C);
     FA_1 : FA
         port map (
-            A => A1,
-            B => B1,
+            A => A(1),
+            B => B(1),
             C_in => FA0_C,
-            S => S1,
+            S => S(1),
             C_Out => FA1_C); 
     FA_2 : FA
         port map (
-            A => A2,
-            B => B2,
+            A => A(2),
+            B => B(2),
             C_in => FA1_C,
-            S => S2,
+            S => S(2),
             C_Out => FA2_C);
     FA_3 : FA
         port map (
-            A => A3,
-            B => B3,
+            A => A(3),
+            B => B(3),
             C_in => FA2_C,
-            S => S3,
+            S => S(3),
             C_Out => C_out);
 end Behavioral;
