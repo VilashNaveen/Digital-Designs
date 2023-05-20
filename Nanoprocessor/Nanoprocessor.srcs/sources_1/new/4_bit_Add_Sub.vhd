@@ -32,49 +32,58 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Add_Sub_4_bit is
-    Port ( En : in STD_LOGIC;
-           A : in STD_LOGIC_VECTOR (3 downto 0);
-           S : out STD_LOGIC_VECTOR (3 downto 0);
-           C : out STD_LOGIC;
-           B : in STD_LOGIC_VECTOR (3 downto 0);
-           Zero : out STD_LOGIC);
+    Port ( Mode : in STD_LOGIC;
+           A : in STD_LOGIC_VECTOR (2 downto 0);
+           B : in STD_LOGIC_VECTOR (2 downto 0);
+           S : out STD_LOGIC_VECTOR (2 downto 0);
+           C_out : out STD_LOGIC);
 end Add_Sub_4_bit;
 
 architecture Behavioral of Add_Sub_4_bit is
-    component RCA_4
-        Port ( A : in STD_LOGIC_VECTOR (3 downto 0);
-            S : out STD_LOGIC_VECTOR (3 downto 0);
-            C_in : in STD_LOGIC;
-            B : in STD_LOGIC_VECTOR (3 downto 0);
-            C_out : out STD_LOGIC);
+    component FA
+        port (
+        A: in std_logic;
+        B: in std_logic;
+        C_in: in std_logic;
+        S: out std_logic;
+        C_out: out std_logic);
     end component;
-    
-signal B_1,S_temp : std_logic_vector (3 downto 0);
-Signal Z_1, EN_1 : std_logic;
+
+    SIGNAL FA0_S, FA0_C, FA1_S, FA1_C, FA2_S, FA2_C, OP_1,OP_2,OP_3,OP_0 : std_logic;
 
 begin
-
-    RCA_4_0 : RCA_4
+    FA_0 : FA
         port map (
-            A => A,
-            B => B_1,
-            S => S_temp,
-            C_in => En_1,
-            C_out => C );
+            A => A(0),
+            B => OP_0,
+            C_in => Mode,
+            S => S(0),
+            C_Out => FA0_C);
+    FA_1 : FA
+        port map (
+            A => A(1),
+            B => OP_1,
+            C_in => FA0_C,
+            S => S(1),
+            C_Out => FA1_C); 
+    FA_2 : FA
+        port map (
+            A => A(2),
+            B => OP_2,
+            C_in => FA1_C,
+            S => S(2),
+            C_Out => C_out);
+    FA_3 : FA
+        port map (
+            A => A(2),
+            B => OP_3,
+            C_in => FA1_C,
+            S => S(2),
+            C_Out => C_out);
             
-    EN_1 <= En;
-            
-    B_1(0) <= (B(0) xor En);
-    B_1(1) <= (B(1) xor En); 
-    B_1(2) <= (B(2) xor En); 
-    B_1(3) <= (B(3) xor En);    
-         
-    Zero <= not (S_temp(0) or S_temp(1) or S_temp(2) or S_temp(3) );     
+    OP_0 <= B(0) xor Mode;
+    OP_1 <= B(1) xor Mode;
+    OP_2 <= B(2) xor Mode;
+    OP_3 <= B(3) xor Mode;
     
-    S <= S_temp;  
-    
-    
-            
-
-
 end Behavioral;
