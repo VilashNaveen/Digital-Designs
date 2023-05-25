@@ -60,25 +60,16 @@ architecture Behavioral of Program_counter is
               Q : out STD_LOGIC_vector (2 downto 0));
     end component; 
     
-    component Slow_Clk 
-        port ( 
-        Clk_in : in STD_LOGIC; 
-        Clk_out: out STD_LOGIC); 
-    end component; 
  
  signal Clk_slow : std_logic; 
  
 begin 
     
-    Slow_Clk0 : Slow_Clk 
-        port map ( 
-        Clk_in => Clk, 
-        Clk_out => Clk_slow); 
         
     D_FF_0 : D_FF
         port map (
         D => D,
-        Clk => Clk_slow,
+        Clk => Clk,
         Res => Res,
         Q => Q );
         
