@@ -32,7 +32,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Instruction_decoder is
---  Port ( );
+    Port ( 
+    I : in std_logic_vector(11 downto 0);
+    Jmp : in std_logic;
+    Im_val, Mode, Load : out std_logic
+    
+    );
 end Instruction_decoder;
 
 architecture Behavioral of Instruction_decoder is
