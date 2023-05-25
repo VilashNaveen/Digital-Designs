@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Fri May 19 13:49:01 2023
+| Date         : Thu May 25 11:22:11 2023
 | Host         : VILASHN running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file Add_Sub_4_bit_timing_summary_routed.rpt -pb Add_Sub_4_bit_timing_summary_routed.pb -rpx Add_Sub_4_bit_timing_summary_routed.rpx -warn_on_violation
 | Design       : Add_Sub_4_bit

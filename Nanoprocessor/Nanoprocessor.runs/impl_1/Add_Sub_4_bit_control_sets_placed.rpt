@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Fri May 19 13:48:46 2023
+| Date         : Thu May 25 11:21:55 2023
 | Host         : VILASHN running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Add_Sub_4_bit_control_sets_placed.rpt
 | Design       : Add_Sub_4_bit

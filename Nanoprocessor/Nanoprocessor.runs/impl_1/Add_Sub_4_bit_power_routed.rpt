@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Fri May 19 13:49:01 2023
+| Date             : Thu May 25 11:22:11 2023
 | Host             : VILASHN running 64-bit major release  (build 9200)
 | Command          : report_power -file Add_Sub_4_bit_power_routed.rpt -pb Add_Sub_4_bit_power_summary_routed.pb -rpx Add_Sub_4_bit_power_routed.rpx
 | Design           : Add_Sub_4_bit
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.885        |
+| Total On-Chip Power (W)  | 2.494        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.807        |
-| Device Static (W)        | 0.078        |
+| Dynamic (W)              | 2.418        |
+| Device Static (W)        | 0.077        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 70.6         |
-| Junction Temperature (C) | 39.4         |
+| Max Ambient (C)          | 72.5         |
+| Junction Temperature (C) | 37.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.037 |       10 |       --- |             --- |
-|   LUT as Logic |     0.037 |        7 |     20800 |            0.03 |
-| Signals        |     0.087 |       19 |       --- |             --- |
-| I/O            |     2.683 |       15 |       106 |           14.15 |
-| Static Power   |     0.078 |          |           |                 |
-| Total          |     2.885 |          |           |                 |
+| Slice Logic    |     0.031 |        9 |       --- |             --- |
+|   LUT as Logic |     0.031 |        6 |     20800 |            0.03 |
+| Signals        |     0.074 |       18 |       --- |             --- |
+| I/O            |     2.313 |       15 |       106 |           14.15 |
+| Static Power   |     0.077 |          |           |                 |
+| Total          |     2.494 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,11 +67,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.176 |       0.160 |      0.016 |
-| Vccaux    |       1.800 |     0.230 |       0.217 |      0.013 |
+| Vccint    |       1.000 |     0.155 |       0.140 |      0.015 |
+| Vccaux    |       1.800 |     0.200 |       0.186 |      0.013 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     1.255 |       1.254 |      0.001 |
+| Vcco18    |       1.800 |     1.080 |       1.079 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -134,7 +134,7 @@ Table of Contents
 +---------------+-----------+
 | Name          | Power (W) |
 +---------------+-----------+
-| Add_Sub_4_bit |     2.807 |
+| Add_Sub_4_bit |     2.418 |
 +---------------+-----------+
 
 

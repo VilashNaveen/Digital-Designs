@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date                      : Fri May 19 13:48:46 2023
+| Date                      : Thu May 25 11:21:55 2023
 | Host                      : VILASHN running 64-bit major release  (build 9200)
 | Command                   : report_io -file Add_Sub_4_bit_io_placed.rpt
 | Design                    : Add_Sub_4_bit
@@ -249,7 +249,7 @@ Table of Contents
 | V12        |             | Dedicated  | M0_0                         | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V13        | A[2]        | High Range | IO_L24P_T3_A01_D17_14        | INPUT         | LVCMOS18*   |      14 |            |      |                     |                 NONE |         | UNFIXED    |           |          |      | NONE             |              |                   |              |
 | V14        | A[1]        | High Range | IO_L24N_T3_A00_D16_14        | INPUT         | LVCMOS18*   |      14 |            |      |                     |                 NONE |         | UNFIXED    |           |          |      | NONE             |              |                   |              |
-| V15        | En          | High Range | IO_L21P_T3_DQS_14            | INPUT         | LVCMOS18*   |      14 |            |      |                     |                 NONE |         | UNFIXED    |           |          |      | NONE             |              |                   |              |
+| V15        | Mode        | High Range | IO_L21P_T3_DQS_14            | INPUT         | LVCMOS18*   |      14 |            |      |                     |                 NONE |         | UNFIXED    |           |          |      | NONE             |              |                   |              |
 | V16        | S[3]        | High Range | IO_L19P_T3_A10_D26_14        | OUTPUT        | LVCMOS18*   |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | UNFIXED    |           |          |      | NONE             |              |                   |              |
 | V17        | S[2]        | High Range | IO_L19N_T3_A09_D25_VREF_14   | OUTPUT        | LVCMOS18*   |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | UNFIXED    |           |          |      | NONE             |              |                   |              |
 | V18        |             |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |

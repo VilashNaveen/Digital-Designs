@@ -33,57 +33,67 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Add_Sub_4_bit is
     Port ( Mode : in STD_LOGIC;
-           A : in STD_LOGIC_VECTOR (2 downto 0);
-           B : in STD_LOGIC_VECTOR (2 downto 0);
-           S : out STD_LOGIC_VECTOR (2 downto 0);
-           C_out : out STD_LOGIC);
+           A : in STD_LOGIC_VECTOR (3 downto 0);
+           B : in STD_LOGIC_VECTOR (3 downto 0);
+           S : out STD_LOGIC_VECTOR (3 downto 0);
+           C : out STD_LOGIC;
+           Zero : out STD_LOGIC);
 end Add_Sub_4_bit;
 
 architecture Behavioral of Add_Sub_4_bit is
-    component FA
+    component FA is
         port (
-        A: in std_logic;
-        B: in std_logic;
-        C_in: in std_logic;
-        S: out std_logic;
-        C_out: out std_logic);
+            A: in std_logic;
+            B: in std_logic;
+            C_in: in std_logic;
+            S: out std_logic;
+            C_out: out std_logic);
     end component;
 
-    SIGNAL FA0_S, FA0_C, FA1_S, FA1_C, FA2_S, FA2_C, OP_1,OP_2,OP_3,OP_0 : std_logic;
-
+    signal FA0_S, FA0_C, FA1_S, FA1_C, FA2_S, FA2_C, C_out : std_logic;
+    signal O,B_in : std_logic_vector(3 downto 0);
+    
 begin
+    B_in(0) <= B(0) xor Mode;
+    B_in(1) <= B(1) xor Mode;
+    B_in(2) <= B(2) xor Mode;
+    B_in(3) <= B(3) xor Mode;
+
     FA_0 : FA
         port map (
             A => A(0),
-            B => OP_0,
+            B => B_in(0),
             C_in => Mode,
-            S => S(0),
-            C_Out => FA0_C);
+            S => O(0),
+            C_out => FA0_C);
+
     FA_1 : FA
         port map (
             A => A(1),
-            B => OP_1,
+            B => B_in(1),
             C_in => FA0_C,
-            S => S(1),
-            C_Out => FA1_C); 
+            S => O(1),
+            C_out => FA1_C);
+
     FA_2 : FA
         port map (
             A => A(2),
-            B => OP_2,
+            B => B_in(2),
             C_in => FA1_C,
-            S => S(2),
-            C_Out => C_out);
+            S => O(2),
+            C_out => FA2_C);
+
     FA_3 : FA
         port map (
-            A => A(2),
-            B => OP_3,
-            C_in => FA1_C,
-            S => S(2),
-            C_Out => C_out);
-            
-    OP_0 <= B(0) xor Mode;
-    OP_1 <= B(1) xor Mode;
-    OP_2 <= B(2) xor Mode;
-    OP_3 <= B(3) xor Mode;
+            A => A(3),
+            B => B_in(3),
+            C_in => FA2_C,
+            S => O(3),
+            C_out => C_out);
+
+    Zero <= not (O(0) or O(1) or O(2) or O(3) or C_out);
+    
+    S <= O  ;
+    C <= C_out;
     
 end Behavioral;

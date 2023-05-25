@@ -32,7 +32,6 @@ set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   {E:/testingPrograms/Digital-Designs/Ripple Carry Adder/sources/FA.vhd}
   {E:/testingPrograms/Digital-Designs/Ripple Carry Adder/sources/HA.vhd}
-  {E:/testingPrograms/Digital-Designs/Ripple Carry Adder/sources/RCA_4.vhd}
   E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/4_bit_Add_Sub.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being

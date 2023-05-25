@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Fri May 19 13:47:24 2023
-# Process ID: 20848
+# Start of session at: Thu May 25 11:21:06 2023
+# Process ID: 8740
 # Current directory: E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.runs/synth_1
 # Command line: vivado.exe -log Add_Sub_4_bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Add_Sub_4_bit.tcl
 # Log file: E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.runs/synth_1/Add_Sub_4_bit.vds
