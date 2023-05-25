@@ -30,7 +30,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- any Xilinx leaf cells in this code.
 --library UNISIM;
 --use UNISIM.VComponents.all;
-
 entity Add_Sub_4_bit is
     Port ( Mode : in STD_LOGIC;
            A : in STD_LOGIC_VECTOR (3 downto 0);
@@ -97,3 +96,4 @@ begin
     C <= C_out;
     
 end Behavioral;
+
