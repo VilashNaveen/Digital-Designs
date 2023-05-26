@@ -32,11 +32,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Adder_3_bit is
-    Port ( C_in : in STD_LOGIC;
+    Port ( 
            A : in STD_LOGIC_VECTOR (2 downto 0);
-           B : in STD_LOGIC_VECTOR (2 downto 0);
-           S : out STD_LOGIC_VECTOR (2 downto 0);
-           C_out : out STD_LOGIC);
+           S : out STD_LOGIC_VECTOR (2 downto 0));
 end Adder_3_bit;
 
 architecture Behavioral of Adder_3_bit is
@@ -49,28 +47,28 @@ architecture Behavioral of Adder_3_bit is
         C_out: out std_logic);
     end component;
 
-    SIGNAL FA0_S, FA0_C, FA1_S, FA1_C, FA2_S, FA2_C : std_logic;
+    SIGNAL FA0_S, FA0_C, FA1_S, FA1_C, FA2_S, FA2_C, C : std_logic;
 
 begin
     FA_0 : FA
         port map (
             A => A(0),
-            B => B(0),
-            C_in => C_in,
+            B => '0',
+            C_in => '0',
             S => S(0),
             C_Out => FA0_C);
     FA_1 : FA
         port map (
             A => A(1),
-            B => B(1),
+            B => '0',
             C_in => FA0_C,
             S => S(1),
             C_Out => FA1_C); 
     FA_2 : FA
         port map (
             A => A(2),
-            B => B(2),
+            B => '1',
             C_in => FA1_C,
             S => S(2),
-            C_Out => C_out);
+            C_Out => C);
 end Behavioral;

@@ -56,7 +56,7 @@ begin
    process (Clk) begin
      If (rising_edge(Clk)) then
          if Res = '1' then
-             Q <= "0000";
+             Q <= "000";
          else
              Q <= D;
          end if;

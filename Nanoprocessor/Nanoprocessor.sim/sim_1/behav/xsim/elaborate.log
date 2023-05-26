@@ -1,8 +1,9 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a600c7158f914ab1898af0990eda49c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Add_Sub_4_bit_Sim_behav xil_defaultlib.Add_Sub_4_bit_Sim -log elaborate.log 
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a600c7158f914ab1898af0990eda49c3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Ins_Dec_Sim_behav xil_defaultlib.Ins_Dec_Sim -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Instruction_decoder.vhd:84]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -10,8 +11,6 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
-Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.Add_Sub_4_bit [add_sub_4_bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.add_sub_4_bit_sim
-Built simulation snapshot Add_Sub_4_bit_Sim_behav
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ins_dec_sim
+Built simulation snapshot Ins_Dec_Sim_behav

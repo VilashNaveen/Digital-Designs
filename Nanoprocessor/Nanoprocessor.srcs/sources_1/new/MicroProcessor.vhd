@@ -113,8 +113,8 @@ architecture Behavioral of MicroProcessor is
      end component;
      
      signal Clk_temp, Jmp_flag, Load, Mode, temp_1 : std_logic;
-     signal  Address_temp, Ad_jmp, Im_val, I,A,B,S : std_logic_vector (3 downto 0);
-     signal Mux_jmp, Ad_3_to_Mux, R_en, Reg_se_1,Reg_se_2 : std_logic_vector (2 downto 0);
+     signal Im_val, I,A,B,S : std_logic_vector (3 downto 0);
+     signal Mux_jmp, Ad_3_to_Mux, R_en, Reg_se_1,Reg_se_2, Address_temp,Ad_jmp : std_logic_vector (2 downto 0);
      signal Bus_12 : std_logic_vector (11 downto 0);
      signal O_bus_0,O_bus_1,O_bus_2,O_bus_3,O_bus_4,O_bus_5,O_bus_6,O_bus_7 : std_logic_vector(3 downto 0);
 begin
@@ -173,7 +173,7 @@ begin
             O_bus_4 =>O_bus_4,
             O_bus_5 =>O_bus_5,
             O_bus_6 =>O_bus_6,
-            O_bus_7 =>O_bus_7,
+            O_bus_7 =>O_bus_7);
     Mux_8_Way_4_bit_0 : Mux_8_Way_4_bit
         port map (
             I_0 =>O_bus_0,
@@ -209,7 +209,7 @@ begin
             Overflow => Overflow);   
             
         
-            
+    Reg_out <= O_bus_0;
 
 
 end Behavioral;
