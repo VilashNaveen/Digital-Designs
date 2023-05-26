@@ -36,7 +36,8 @@ entity Add_Sub_4_bit is
            B : in STD_LOGIC_VECTOR (3 downto 0);
            S : out STD_LOGIC_VECTOR (3 downto 0);
            C : out STD_LOGIC;
-           Zero : out STD_LOGIC);
+           Zero, Overflow : out STD_LOGIC);
+           
 end Add_Sub_4_bit;
 
 architecture Behavioral of Add_Sub_4_bit is
@@ -91,6 +92,7 @@ begin
             C_out => C_out);
 
     Zero <= not (O(0) or O(1) or O(2) or O(3) or C_out);
+    Overflow <= FA2_C nor c_out;
     
     S <= O  ;
     C <= C_out;
