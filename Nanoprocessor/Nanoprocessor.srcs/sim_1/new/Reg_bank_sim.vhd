@@ -73,7 +73,7 @@ begin
         I <= "1010";
         wait for 100ns;
         
-        En <= "010";
+        En <= "100";
         I <= "0001";
         wait ;
     end process;
