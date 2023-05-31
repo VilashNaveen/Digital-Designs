@@ -58,34 +58,37 @@ begin
 process(instruction, reg_temp_1, reg_temp_2, val_temp, Reg_Jmp)
     begin
         if instruction = "10" then
+            R_en <= "000";
             Im_val <= val_temp;
             Load <= '0';
             R_en <= reg_temp_1;
-            R_en <= "000";
+            
         elsif instruction = "00" then
+            R_en <= "000";
             Mode <= '0';
             R_se_1 <= reg_temp_1;
             R_se_2 <= reg_temp_2;
             
             R_en <= reg_temp_1;
             Load <= '1';
-            R_en <= "000";
+            
             
         elsif instruction = "01" then
+            R_en <= "000";
             Mode <= '1';
             R_se_1 <= "000";
             R_se_2 <= reg_temp_1;
             
             R_en <= reg_temp_1;
             Load <= '1';
-            R_en <= "000";
+
         else
             R_se_1 <= reg_temp_1;
-            if Reg_Jmp = "000" then
+            R_en <= "000";
+            if Reg_Jmp = "0000" then
                 Jmp_flag <= '1';
-                Ad_jmp <= val_temp;
+                Ad_jmp <= val_temp(2 downto 0);
             end if;
-                R_en <= "000";
         end if;
 end process;
             

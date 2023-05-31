@@ -69,9 +69,18 @@ UUT: Instruction_decoder PORT MAP(
   
   process
     begin
-    I <= "100110111111";
-    Reg_jmp <= "1111";
-    wait;
+    I <= "000111110000";
+        wait for 100 ns;
+        
+        I <= "100110001010";
+        wait for 100 ns;
+        
+        I <= "010110000000";
+        wait for 100 ns;
+        
+        I <= "110110000111";
+        Reg_jmp <= "0000";
+        wait;
 end process;
     
 

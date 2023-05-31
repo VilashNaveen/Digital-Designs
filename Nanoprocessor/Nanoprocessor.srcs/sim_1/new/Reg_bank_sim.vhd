@@ -46,7 +46,7 @@ architecture Behavioral of Reg_bank_sim is
     end component;
     signal En : std_logic_vector(2 downto 0);
     signal O_bus_0,O_bus_1,O_bus_2,O_bus_3,O_bus_4,O_bus_5,O_bus_6,O_bus_7,I : std_logic_vector(3 downto 0);
-    signal clk : std_logic;
+    signal clk : std_logic := '0';
     
 
 
@@ -71,7 +71,11 @@ begin
     begin
         En <= "001";
         I <= "1010";
-        wait;
+        wait for 100ns;
+        
+        En <= "010";
+        I <= "0001";
+        wait ;
     end process;
 
 

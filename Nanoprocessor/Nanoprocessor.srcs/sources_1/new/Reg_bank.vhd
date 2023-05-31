@@ -67,7 +67,7 @@ begin
     Reg_0 : Reg
         port map(
             D => "0000",
-            En => y(0),
+            En => '1',
             Clk => Clk,
             Q => O_bus_0);
             
