@@ -101,6 +101,8 @@ process(instruction, reg_temp_1, reg_temp_2, val_temp, Reg_Jmp)
             else
                 Jmp_flag <= '0';
                 Ad_jmp <= "000";
+            
+
             end if;
         end if;
 end process;

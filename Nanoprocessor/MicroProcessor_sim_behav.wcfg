@@ -11,14 +11,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="848223708fs"></ZoomEndTime>
-      <Cursor1Time time="188309000fs"></Cursor1Time>
+      <ZoomEndTime time="683012260fs"></ZoomEndTime>
+      <Cursor1Time time="114711000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="148"></NameColumnWidth>
-      <ValueColumnWidth column_width="107"></ValueColumnWidth>
+      <ValueColumnWidth column_width="95"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="18" />
+   <WVObjectSize size="20" />
    <wvobject fp_name="/MicroProcessor_sim/Overflow" type="logic">
       <obj_property name="ElementShortName">Overflow</obj_property>
       <obj_property name="ObjectShortName">Overflow</obj_property>
@@ -34,6 +34,7 @@
    <wvobject fp_name="/MicroProcessor_sim/Reg_out" type="array">
       <obj_property name="ElementShortName">Reg_out[3:0]</obj_property>
       <obj_property name="ObjectShortName">Reg_out[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/MicroProcessor_sim/Clk" type="logic">
       <obj_property name="ElementShortName">Clk</obj_property>
@@ -43,52 +44,60 @@
       <obj_property name="ElementShortName">seg_out[6:0]</obj_property>
       <obj_property name="ObjectShortName">seg_out[6:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/MicroProcessor_sim/UUT/Reg_bank_0/En" type="array">
-      <obj_property name="ElementShortName">En[2:0]</obj_property>
-      <obj_property name="ObjectShortName">En[2:0]</obj_property>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/I" type="array">
+      <obj_property name="ElementShortName">I[11:0]</obj_property>
+      <obj_property name="ObjectShortName">I[11:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/MicroProcessor_sim/UUT/Reg_bank_0/I" type="array">
-      <obj_property name="ElementShortName">I[3:0]</obj_property>
-      <obj_property name="ObjectShortName">I[3:0]</obj_property>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/Reg_jmp" type="array">
+      <obj_property name="ElementShortName">Reg_jmp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg_jmp[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/MicroProcessor_sim/UUT/Reg_bank_0/Clk" type="logic">
-      <obj_property name="ElementShortName">Clk</obj_property>
-      <obj_property name="ObjectShortName">Clk</obj_property>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/Mode" type="logic">
+      <obj_property name="ElementShortName">Mode</obj_property>
+      <obj_property name="ObjectShortName">Mode</obj_property>
    </wvobject>
-   <wvobject fp_name="/MicroProcessor_sim/UUT/Reg_bank_0/O_bus_0" type="array">
-      <obj_property name="ElementShortName">O_bus_0[3:0]</obj_property>
-      <obj_property name="ObjectShortName">O_bus_0[3:0]</obj_property>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/Load" type="logic">
+      <obj_property name="ElementShortName">Load</obj_property>
+      <obj_property name="ObjectShortName">Load</obj_property>
    </wvobject>
-   <wvobject fp_name="/MicroProcessor_sim/UUT/Reg_bank_0/O_bus_1" type="array">
-      <obj_property name="ElementShortName">O_bus_1[3:0]</obj_property>
-      <obj_property name="ObjectShortName">O_bus_1[3:0]</obj_property>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/Jmp_flag" type="logic">
+      <obj_property name="ElementShortName">Jmp_flag</obj_property>
+      <obj_property name="ObjectShortName">Jmp_flag</obj_property>
    </wvobject>
-   <wvobject fp_name="/MicroProcessor_sim/UUT/Reg_bank_0/O_bus_2" type="array">
-      <obj_property name="ElementShortName">O_bus_2[3:0]</obj_property>
-      <obj_property name="ObjectShortName">O_bus_2[3:0]</obj_property>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/R_en" type="array">
+      <obj_property name="ElementShortName">R_en[2:0]</obj_property>
+      <obj_property name="ObjectShortName">R_en[2:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/MicroProcessor_sim/UUT/Reg_bank_0/O_bus_3" type="array">
-      <obj_property name="ElementShortName">O_bus_3[3:0]</obj_property>
-      <obj_property name="ObjectShortName">O_bus_3[3:0]</obj_property>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/R_se_1" type="array">
+      <obj_property name="ElementShortName">R_se_1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">R_se_1[2:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/MicroProcessor_sim/UUT/Reg_bank_0/O_bus_4" type="array">
-      <obj_property name="ElementShortName">O_bus_4[3:0]</obj_property>
-      <obj_property name="ObjectShortName">O_bus_4[3:0]</obj_property>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/R_se_2" type="array">
+      <obj_property name="ElementShortName">R_se_2[2:0]</obj_property>
+      <obj_property name="ObjectShortName">R_se_2[2:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/MicroProcessor_sim/UUT/Reg_bank_0/O_bus_5" type="array">
-      <obj_property name="ElementShortName">O_bus_5[3:0]</obj_property>
-      <obj_property name="ObjectShortName">O_bus_5[3:0]</obj_property>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/Ad_Jmp" type="array">
+      <obj_property name="ElementShortName">Ad_Jmp[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Ad_Jmp[2:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/MicroProcessor_sim/UUT/Reg_bank_0/O_bus_6" type="array">
-      <obj_property name="ElementShortName">O_bus_6[3:0]</obj_property>
-      <obj_property name="ObjectShortName">O_bus_6[3:0]</obj_property>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/Im_val" type="array">
+      <obj_property name="ElementShortName">Im_val[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Im_val[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/MicroProcessor_sim/UUT/Reg_bank_0/O_bus_7" type="array">
-      <obj_property name="ElementShortName">O_bus_7[3:0]</obj_property>
-      <obj_property name="ObjectShortName">O_bus_7[3:0]</obj_property>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[1:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/MicroProcessor_sim/UUT/Reg_bank_0/y" type="array">
-      <obj_property name="ElementShortName">y[7:0]</obj_property>
-      <obj_property name="ObjectShortName">y[7:0]</obj_property>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/reg_temp_1" type="array">
+      <obj_property name="ElementShortName">reg_temp_1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_temp_1[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/reg_temp_2" type="array">
+      <obj_property name="ElementShortName">reg_temp_2[2:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_temp_2[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MicroProcessor_sim/UUT/Instruction_decoder_0/val_temp" type="array">
+      <obj_property name="ElementShortName">val_temp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">val_temp[3:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Fri May 26 15:28:56 2023
+| Date         : Thu Jun  8 14:19:56 2023
 | Host         : VILASHN running 64-bit major release  (build 9200)
 | Command      : report_methodology -file MicroProcessor_methodology_drc_routed.rpt -pb MicroProcessor_methodology_drc_routed.pb -rpx MicroProcessor_methodology_drc_routed.rpx
 | Design       : MicroProcessor
@@ -23,12 +23,79 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 0
-+------+----------+-------------+------------+
-| Rule | Severity | Description | Violations |
-+------+----------+-------------+------------+
-+------+----------+-------------+------------+
+             Violations found: 13
++-----------+----------+-----------------------------+------------+
+| Rule      | Severity | Description                 | Violations |
++-----------+----------+-----------------------------+------------+
+| TIMING-17 | Warning  | Non-clocked sequential cell | 9          |
+| TIMING-20 | Warning  | Non-clocked latch           | 4          |
++-----------+----------+-----------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin Reg_bank_0/Reg_2/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin Reg_bank_0/Reg_2/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin Reg_bank_0/Reg_3/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin Reg_bank_0/Reg_3/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin Reg_bank_0/Reg_7/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin Reg_bank_0/Reg_7/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin program_counter_0/D_FF_0/Q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin program_counter_0/D_FF_1/Q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin program_counter_0/D_FF_2/Q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch Instruction_decoder_0/Ad_Jmp_reg[0] cannot be properly analyzed as its control pin Instruction_decoder_0/Ad_Jmp_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch Instruction_decoder_0/Ad_Jmp_reg[1] cannot be properly analyzed as its control pin Instruction_decoder_0/Ad_Jmp_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch Instruction_decoder_0/Im_val_reg[0] cannot be properly analyzed as its control pin Instruction_decoder_0/Im_val_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch Instruction_decoder_0/Im_val_reg[1] cannot be properly analyzed as its control pin Instruction_decoder_0/Im_val_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
 

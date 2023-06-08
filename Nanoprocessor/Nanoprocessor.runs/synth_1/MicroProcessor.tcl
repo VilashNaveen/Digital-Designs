@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,23 +31,26 @@ set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
 set_property ip_output_repo e:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/4_bit_Add_Sub.vhd
-  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3_bit.vhd
   E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd
   E:/testingPrograms/Digital-Designs/Multiplexer_8_to_1/sources/Decoder_2_to_4.vhd
   E:/testingPrograms/Digital-Designs/Multiplexer_8_to_1/sources/Decoder_3_to_8.vhd
+  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2_Way_4_bit.vhd
+  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_counter.vhd
+  E:/testingPrograms/Digital-Designs/Arithmetic_Unit/Arithmetic_Unit.srcs/sources_1/new/Reg.vhd
+  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Reg_bank.vhd
+  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Slow_Clk.vhd
+  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/4_bit_Add_Sub.vhd
   {E:/testingPrograms/Digital-Designs/Ripple Carry Adder/sources/FA.vhd}
   {E:/testingPrograms/Digital-Designs/Ripple Carry Adder/sources/HA.vhd}
   E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Instruction_decoder.vhd
   E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2_Way_3_bit.vhd
-  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2_Way_4_bit.vhd
   E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_8_Way_4_bit.vhd
-  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_counter.vhd
-  E:/testingPrograms/Digital-Designs/Arithmetic_Unit/Arithmetic_Unit.srcs/sources_1/new/Reg.vhd
-  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Reg_bank.vhd
   E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Rom.vhd
-  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Slow_Clk.vhd
   E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/MicroProcessor.vhd
+  {E:/testingPrograms/Digital-Designs/Ripple Carry Adder/sources/RCA_4.vhd}
+  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Slow_Clk_2.vhd
+  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3_bit.vhd
+  E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Seg_7.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -56,6 +60,9 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/vilash/Downloads/Basys3Labs.xdc
+set_property used_in_implementation false [get_files C:/Users/vilash/Downloads/Basys3Labs.xdc]
+
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 

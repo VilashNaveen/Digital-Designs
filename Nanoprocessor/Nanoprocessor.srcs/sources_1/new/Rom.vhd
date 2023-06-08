@@ -42,22 +42,22 @@ begin
     process (address)
     begin  
         case address is
-            when "000" =>
-                data <= "101110000001";--
-            when "001" =>
-                data <= "100010000010";--
-            when "010" =>
-                data <= "100100000011";--
-            when "011" =>
-                data <= "001110010000";--
-            when "100" =>
-                data <= "001110100000";--
-            when "101" =>
-                data <= "000000000000";--
-            when "110" =>
-                data <= "000000000000";
-            when others =>
-                data <= "000000000000";
+               when "000" =>
+                   data <= "101110000001";-- 
+               when "001" =>
+                   data <= "100100000010";--
+               when "010" =>
+                   data <= "100110000011";--
+               when "011" =>
+                   data <= "001110100000";--
+               when "100" =>
+                   data <= "001110110000";--
+               when "101" =>
+                   data <= "110000000001";--
+               when "110" =>
+                   data <= "100000000000";
+               when others =>
+                   data <= "100000000000";
         end case;
     end process;
 
