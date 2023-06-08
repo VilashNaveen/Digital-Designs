@@ -47,7 +47,7 @@ architecture Behavioral of MicroProcessor_sim is
     end component;
 
  SIGNAL Overflow,Zero : std_logic;
- SIGNAL Res : std_logic := '1';
+ SIGNAL Res : std_logic := '0';
  SIGNAL Reg_out :STD_LOGIC_VECTOR(3 downto 0);
  signal Clk : std_logic := '0';
  signal seg_out : std_logic_vector (6 downto 0);
@@ -69,12 +69,14 @@ begin
         Clk<=not(Clk);
          
 end process;
-
 process
 begin
-    Res <='1';
-    wait for 50ns;
+    Res <= '1';
+    wait for 40ns;
     Res <= '0';
+    
     wait;
 end process;
+
+
 end Behavioral;
