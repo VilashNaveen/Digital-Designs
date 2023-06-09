@@ -42,13 +42,14 @@ architecture Behavioral of MicroProcessor_sim is
         Clk,Res : in std_logic;
         Overflow, Zero : out std_logic;
         Seg_out : out STD_LOGIC_VECTOR (6 downto 0);
-        Reg_out : out std_logic_vector(3 downto 0)
+        Reg_out : out std_logic_vector(3 downto 0);
+        Analog_select : out std_logic_vector(3 downto 0)
     );
     end component;
 
  SIGNAL Overflow,Zero : std_logic;
  SIGNAL Res : std_logic := '0';
- SIGNAL Reg_out :STD_LOGIC_VECTOR(3 downto 0);
+ SIGNAL Reg_out, Analog_select :STD_LOGIC_VECTOR(3 downto 0);
  signal Clk : std_logic := '0';
  signal seg_out : std_logic_vector (6 downto 0);
     
@@ -59,7 +60,8 @@ begin
         Overflow => Overflow,
         Zero => Zero,
         Reg_out => Reg_out,
-        Seg_out => seg_out
+        Seg_out => seg_out,
+        Analog_select => Analog_select
         
   );
    

@@ -45,8 +45,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Program_counter is
     Port ( 
-           Q :out  STD_LOGIC_VECTOR  (2 downto 0);
-           D : in std_logic_vector (2 downto 0);
+           Q :out  STD_LOGIC_VECTOR  (2 downto 0):= "111";
+           D : in std_logic_vector (2 downto 0):= "000";
            Res : in STD_LOGIC;
            Clk : in STD_LOGIC);
 end Program_counter;
@@ -62,7 +62,6 @@ architecture Behavioral of Program_counter is
     end component; 
     
  
- signal Clk_slow : std_logic; 
  
 begin 
     

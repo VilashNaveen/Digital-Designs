@@ -36,7 +36,8 @@ entity MicroProcessor is
         Clk,Res : in std_logic;
         Overflow, Zero : out std_logic;
         Reg_out : out std_logic_vector(3 downto 0);
-        Seg_out : out STD_LOGIC_VECTOR (6 downto 0)
+        Seg_out : out STD_LOGIC_VECTOR (6 downto 0);
+        Analog_select : out std_logic_vector (3 downto 0)
     );
 end MicroProcessor;
 
@@ -225,7 +226,10 @@ begin
         Port map(I=> O_bus_7,
              O=>Seg_out); 
 
-        
+    Analog_select(0) <= '0';
+    Analog_select(1) <= '1';
+    Analog_select(2) <= '1';
+    Analog_select(3) <= '1';
     Reg_out <= O_bus_7;
 
 
