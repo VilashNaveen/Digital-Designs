@@ -1,0 +1,13 @@
+Microprocessor Config
+
+clock 0.5Hz
+program will add numbers from 1 to 3.
+registry 7 output will be 1,3,6.
+
+
+LD0 - LD3  Registry 7 out
+LD14	   Zero flag
+LD15	   Overflow
+Segment diplay Regstry 7 out
+U18	   Reset button
+
