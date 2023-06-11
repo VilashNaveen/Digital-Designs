@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1686294043">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1686503042">
   <File Type="PA-TCL" Name="MicroProcessor.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="MicroProcessor_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="MicroProcessor_reports.tcl"/>
@@ -102,18 +102,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/MicroProcessor.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../Ripple Carry Adder/sources/RCA_4.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Slow_Clk_2.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

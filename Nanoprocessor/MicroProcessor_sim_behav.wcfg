@@ -11,12 +11,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="689536879fs"></ZoomEndTime>
+      <ZoomEndTime time="1288163968fs"></ZoomEndTime>
       <Cursor1Time time="29160000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="148"></NameColumnWidth>
-      <ValueColumnWidth column_width="71"></ValueColumnWidth>
+      <ValueColumnWidth column_width="59"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="7" />
    <wvobject fp_name="/MicroProcessor_sim/Overflow" type="logic">
@@ -34,12 +34,10 @@
    <wvobject fp_name="/MicroProcessor_sim/Reg_out" type="array">
       <obj_property name="ElementShortName">Reg_out[3:0]</obj_property>
       <obj_property name="ObjectShortName">Reg_out[3:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/MicroProcessor_sim/Analog_select" type="array">
       <obj_property name="ElementShortName">Analog_select[3:0]</obj_property>
       <obj_property name="ObjectShortName">Analog_select[3:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/MicroProcessor_sim/Clk" type="logic">
       <obj_property name="ElementShortName">Clk</obj_property>
@@ -48,6 +46,5 @@
    <wvobject fp_name="/MicroProcessor_sim/seg_out" type="array">
       <obj_property name="ElementShortName">seg_out[6:0]</obj_property>
       <obj_property name="ObjectShortName">seg_out[6:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
 </wave_config>

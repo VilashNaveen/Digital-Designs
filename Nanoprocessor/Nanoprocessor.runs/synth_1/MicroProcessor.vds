@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Fri Jun  9 12:30:46 2023
-# Process ID: 7600
+# Start of session at: Sun Jun 11 22:34:04 2023
+# Process ID: 3988
 # Current directory: E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.runs/synth_1
 # Command line: vivado.exe -log MicroProcessor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroProcessor.tcl
 # Log file: E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.runs/synth_1/MicroProcessor.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6916 
+INFO: Helper process launched with PID 2104 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 381.840 ; gain = 96.473
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 381.738 ; gain = 96.414
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'MicroProcessor' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/MicroProcessor.vhd:44]
 INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Slow_Clk.vhd:34' bound to instance 'Slow_Clk_0' of component 'Slow_Clk' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/MicroProcessor.vhd:128]
@@ -32,11 +32,11 @@ INFO: [Synth 8-638] synthesizing module 'Rom' [E:/testingPrograms/Digital-Design
 INFO: [Synth 8-256] done synthesizing module 'Rom' (3#1) [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Rom.vhd:40]
 INFO: [Synth 8-3491] module 'Program_counter' declared at 'E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_counter.vhd:46' bound to instance 'program_counter_0' of component 'Program_counter' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/MicroProcessor.vhd:151]
 INFO: [Synth 8-638] synthesizing module 'Program_counter' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_counter.vhd:54]
-INFO: [Synth 8-3491] module 'D_FF' declared at 'E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:46' bound to instance 'D_FF_0' of component 'D_FF' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_counter.vhd:69]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:46' bound to instance 'D_FF_0' of component 'D_FF' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_counter.vhd:68]
 INFO: [Synth 8-638] synthesizing module 'D_FF' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:54]
 INFO: [Synth 8-256] done synthesizing module 'D_FF' (4#1) [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:54]
-INFO: [Synth 8-3491] module 'D_FF' declared at 'E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:46' bound to instance 'D_FF_1' of component 'D_FF' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_counter.vhd:77]
-INFO: [Synth 8-3491] module 'D_FF' declared at 'E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:46' bound to instance 'D_FF_2' of component 'D_FF' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_counter.vhd:85]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:46' bound to instance 'D_FF_1' of component 'D_FF' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_counter.vhd:76]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:46' bound to instance 'D_FF_2' of component 'D_FF' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_counter.vhd:84]
 INFO: [Synth 8-256] done synthesizing module 'Program_counter' (5#1) [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_counter.vhd:54]
 INFO: [Synth 8-3491] module 'Adder_3_bit' declared at 'E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3_bit.vhd:34' bound to instance 'Adder_3_bit_0' of component 'Adder_3_bit' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/MicroProcessor.vhd:158]
 INFO: [Synth 8-638] synthesizing module 'Adder_3_bit' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3_bit.vhd:40]
@@ -97,7 +97,7 @@ WARNING: [Synth 8-3917] design MicroProcessor has port Analog_select[2] driven b
 WARNING: [Synth 8-3917] design MicroProcessor has port Analog_select[1] driven by constant 1
 WARNING: [Synth 8-3917] design MicroProcessor has port Analog_select[0] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 437.355 ; gain = 151.988
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 437.543 ; gain = 152.219
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -110,10 +110,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 437.355 ; gain = 151.988
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 437.543 ; gain = 152.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 437.355 ; gain = 151.988
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 437.543 ; gain = 152.219
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -129,22 +129,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 763.656 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 763.855 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 763.656 ; gain = 478.289
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 763.855 ; gain = 478.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 763.656 ; gain = 478.289
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 763.855 ; gain = 478.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 763.656 ; gain = 478.289
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 763.855 ; gain = 478.531
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk_status" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -157,7 +157,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'Load_reg' [E:/testingProgra
 WARNING: [Synth 8-327] inferring latch for variable 'Ad_Jmp_reg' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Instruction_decoder.vhd:100]
 WARNING: [Synth 8-327] inferring latch for variable 'Im_val_reg' [E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Instruction_decoder.vhd:70]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 763.656 ; gain = 478.289
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 763.855 ; gain = 478.531
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -277,53 +277,33 @@ WARNING: [Synth 8-3917] design MicroProcessor has port Analog_select[3] driven b
 WARNING: [Synth 8-3917] design MicroProcessor has port Analog_select[2] driven by constant 1
 WARNING: [Synth 8-3917] design MicroProcessor has port Analog_select[1] driven by constant 1
 WARNING: [Synth 8-3917] design MicroProcessor has port Analog_select[0] driven by constant 0
-WARNING: [Synth 8-264] enable of latch \Instruction_decoder_0/Ad_Jmp_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Instruction_decoder_0/Ad_Jmp_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Instruction_decoder_0/Ad_Jmp_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch \Instruction_decoder_0/Ad_Jmp_reg[1]  is always disabled
-INFO: [Synth 8-3886] merging instance 'Instruction_decoder_0/Im_val_reg[3]' (LD) to 'Instruction_decoder_0/Im_val_reg[2]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Instruction_decoder_0/Im_val_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Instruction_decoder_0/Ad_Jmp_reg[2] )
 INFO: [Synth 8-3886] merging instance 'Reg_bank_0/Reg_0/Q_reg[3]' (FD) to 'Reg_bank_0/Reg_0/Q_reg[0]'
 INFO: [Synth 8-3886] merging instance 'Reg_bank_0/Reg_0/Q_reg[2]' (FD) to 'Reg_bank_0/Reg_0/Q_reg[0]'
 INFO: [Synth 8-3886] merging instance 'Reg_bank_0/Reg_0/Q_reg[1]' (FD) to 'Reg_bank_0/Reg_0/Q_reg[0]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_bank_0/Reg_0/Q_reg[0] )
-WARNING: [Synth 8-3332] Sequential element (Instruction_decoder_0/Ad_Jmp_reg[2]) is unused and will be removed from module MicroProcessor.
-WARNING: [Synth 8-3332] Sequential element (Instruction_decoder_0/Ad_Jmp_reg[1]) is unused and will be removed from module MicroProcessor.
-WARNING: [Synth 8-3332] Sequential element (Instruction_decoder_0/Ad_Jmp_reg[0]) is unused and will be removed from module MicroProcessor.
-WARNING: [Synth 8-3332] Sequential element (Instruction_decoder_0/Im_val_reg[2]) is unused and will be removed from module MicroProcessor.
 WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_0/Q_reg[0]) is unused and will be removed from module MicroProcessor.
-INFO: [Synth 8-3886] merging instance 'Reg_bank_0/Reg_7/Q_reg[3]' (FDE) to 'Reg_bank_0/Reg_7/Q_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Reg_bank_0/Reg_6/Q_reg[3]' (FDE) to 'Reg_bank_0/Reg_6/Q_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Reg_bank_0/Reg_5/Q_reg[3]' (FDE) to 'Reg_bank_0/Reg_5/Q_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Reg_bank_0/Reg_4/Q_reg[3]' (FDE) to 'Reg_bank_0/Reg_4/Q_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Reg_bank_0/Reg_3/Q_reg[3]' (FDE) to 'Reg_bank_0/Reg_3/Q_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Reg_bank_0/Reg_2/Q_reg[3]' (FDE) to 'Reg_bank_0/Reg_2/Q_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Reg_bank_0/Reg_1/Q_reg[3]' (FDE) to 'Reg_bank_0/Reg_1/Q_reg[2]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_bank_0/Reg_7/Q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_bank_0/Reg_6/Q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_bank_0/Reg_5/Q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_bank_0/Reg_4/Q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_bank_0/Reg_3/Q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_bank_0/Reg_2/Q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_bank_0/Reg_1/Q_reg[2] )
-WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_7/Q_reg[2]) is unused and will be removed from module MicroProcessor.
-WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_1/Q_reg[2]) is unused and will be removed from module MicroProcessor.
+WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_2/Q_reg[3]) is unused and will be removed from module MicroProcessor.
 WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_2/Q_reg[2]) is unused and will be removed from module MicroProcessor.
+WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_2/Q_reg[1]) is unused and will be removed from module MicroProcessor.
+WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_2/Q_reg[0]) is unused and will be removed from module MicroProcessor.
+WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_3/Q_reg[3]) is unused and will be removed from module MicroProcessor.
 WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_3/Q_reg[2]) is unused and will be removed from module MicroProcessor.
-WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_4/Q_reg[2]) is unused and will be removed from module MicroProcessor.
-WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_5/Q_reg[2]) is unused and will be removed from module MicroProcessor.
-WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_6/Q_reg[2]) is unused and will be removed from module MicroProcessor.
 WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_3/Q_reg[1]) is unused and will be removed from module MicroProcessor.
 WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_3/Q_reg[0]) is unused and will be removed from module MicroProcessor.
+WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_4/Q_reg[3]) is unused and will be removed from module MicroProcessor.
+WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_4/Q_reg[2]) is unused and will be removed from module MicroProcessor.
 WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_4/Q_reg[1]) is unused and will be removed from module MicroProcessor.
 WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_4/Q_reg[0]) is unused and will be removed from module MicroProcessor.
+WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_5/Q_reg[3]) is unused and will be removed from module MicroProcessor.
+WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_5/Q_reg[2]) is unused and will be removed from module MicroProcessor.
 WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_5/Q_reg[1]) is unused and will be removed from module MicroProcessor.
 WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_5/Q_reg[0]) is unused and will be removed from module MicroProcessor.
+WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_6/Q_reg[3]) is unused and will be removed from module MicroProcessor.
+WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_6/Q_reg[2]) is unused and will be removed from module MicroProcessor.
 WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_6/Q_reg[1]) is unused and will be removed from module MicroProcessor.
 WARNING: [Synth 8-3332] Sequential element (Reg_bank_0/Reg_6/Q_reg[0]) is unused and will be removed from module MicroProcessor.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 763.656 ; gain = 478.289
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 763.855 ; gain = 478.531
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -335,13 +315,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 763.656 ; gain = 478.289
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 763.855 ; gain = 478.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 782.191 ; gain = 496.824
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 783.078 ; gain = 497.754
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -353,7 +333,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 782.191 ; gain = 496.824
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 783.078 ; gain = 497.754
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -377,7 +357,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 782.191 ; gain = 496.824
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 783.078 ; gain = 497.754
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -390,7 +370,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 782.191 ; gain = 496.824
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 783.078 ; gain = 497.754
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -402,25 +382,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 782.191 ; gain = 496.824
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 783.078 ; gain = 497.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 782.191 ; gain = 496.824
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 783.078 ; gain = 497.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 782.191 ; gain = 496.824
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 783.078 ; gain = 497.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 782.191 ; gain = 496.824
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 783.078 ; gain = 497.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -438,15 +418,15 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |     8|
-|3     |LUT1   |     2|
-|4     |LUT2   |     5|
-|5     |LUT3   |     3|
-|6     |LUT4   |     6|
-|7     |LUT5   |    11|
-|8     |LUT6   |     2|
-|9     |MUXF7  |     1|
-|10    |FDRE   |    43|
-|11    |LD     |     2|
+|3     |LUT1   |     1|
+|4     |LUT2   |     3|
+|5     |LUT3   |    10|
+|6     |LUT4   |    21|
+|7     |LUT5   |    13|
+|8     |LUT6   |     7|
+|9     |FDRE   |    45|
+|10    |LD     |     7|
+|11    |LDCP   |     1|
 |12    |IBUF   |     2|
 |13    |OBUF   |    17|
 +------+-------+------+
@@ -455,39 +435,39 @@ Report Instance Areas:
 +------+------------------------+--------------------+------+
 |      |Instance                |Module              |Cells |
 +------+------------------------+--------------------+------+
-|1     |top                     |                    |   103|
-|2     |  Instruction_decoder_0 |Instruction_decoder |     2|
-|3     |  Reg_bank_0            |Reg_bank            |    19|
-|4     |    Reg_1               |Reg                 |     5|
-|5     |    Reg_2               |Reg_2               |     6|
-|6     |    Reg_7               |Reg_3               |     8|
-|7     |  Slow_Clk_0            |Slow_Clk            |    53|
-|8     |  program_counter_0     |Program_counter     |     9|
-|9     |    D_FF_0              |D_FF                |     4|
-|10    |    D_FF_1              |D_FF_0              |     2|
-|11    |    D_FF_2              |D_FF_1              |     3|
+|1     |top                     |                    |   136|
+|2     |  Instruction_decoder_0 |Instruction_decoder |    11|
+|3     |  Reg_bank_0            |Reg_bank            |    17|
+|4     |    Reg_1               |Reg                 |     4|
+|5     |    Reg_7               |Reg_2               |    13|
+|6     |  Slow_Clk_0            |Slow_Clk            |    53|
+|7     |  program_counter_0     |Program_counter     |    35|
+|8     |    D_FF_0              |D_FF                |    17|
+|9     |    D_FF_1              |D_FF_0              |     9|
+|10    |    D_FF_2              |D_FF_1              |     9|
 +------+------------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 782.191 ; gain = 496.824
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 783.078 ; gain = 497.754
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 782.191 ; gain = 170.523
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 782.191 ; gain = 496.824
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 783.078 ; gain = 171.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 783.078 ; gain = 497.754
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2 instances were transformed.
-  LD => LDCE: 2 instances
+  A total of 8 instances were transformed.
+  LD => LDCE: 7 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-114 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
+97 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 782.191 ; gain = 508.980
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 783.078 ; gain = 510.102
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'E:/testingPrograms/Digital-Designs/Nanoprocessor/Nanoprocessor.runs/synth_1/MicroProcessor.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file MicroProcessor_utilization_synth.rpt -pb MicroProcessor_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 782.191 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Jun  9 12:31:07 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 783.078 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 11 22:34:26 2023...

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Fri Jun  9 12:31:50 2023
+| Date         : Sun Jun 11 22:35:13 2023
 | Host         : VILASHN running 64-bit major release  (build 9200)
 | Command      : report_drc -file MicroProcessor_drc_routed.rpt -pb MicroProcessor_drc_routed.pb -rpx MicroProcessor_drc_routed.rpx
 | Design       : MicroProcessor
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 2
+             Violations found: 4
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 3          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -49,7 +49,17 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net program_counter_0/D_FF_0/E[0] is a gated clock net sourced by a combinational pin program_counter_0/D_FF_0/Im_val_reg[1]_i_2/O, cell program_counter_0/D_FF_0/Im_val_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net Instruction_decoder_0/Load_reg/G0 is a gated clock net sourced by a combinational pin Instruction_decoder_0/Load_reg/L3_2/O, cell Instruction_decoder_0/Load_reg/L3_2 (in Instruction_decoder_0/Load_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net program_counter_0/D_FF_2/E[0] is a gated clock net sourced by a combinational pin program_counter_0/D_FF_2/Load_reg_i_2/O, cell program_counter_0/D_FF_2/Load_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net program_counter_0/D_FF_2/Q_reg_0[0] is a gated clock net sourced by a combinational pin program_counter_0/D_FF_2/Ad_Jmp_reg[2]_i_2/O, cell program_counter_0/D_FF_2/Ad_Jmp_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 
