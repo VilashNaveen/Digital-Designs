@@ -1,7 +1,7 @@
-Running: xsim.dir/Mux_8_Way_4_bit_sim_behav/xsimk.exe -simmode gui -wdb Mux_8_Way_4_bit_sim_behav.wdb -simrunnum 0 -socket 53819
+Running: xsim.dir/Mux_8_Way_4_bit_sim_behav/xsimk.exe -simmode gui -wdb Mux_8_Way_4_bit_sim_behav.wdb -simrunnum 0 -socket 60372
 Design successfully loaded
-Design Loading Memory Usage: 7152 KB (Peak: 7152 KB)
+Design Loading Memory Usage: 6544 KB (Peak: 6544 KB)
 Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 7700 KB (Peak: 7700 KB)
+Simulation Memory Usage: 7112 KB (Peak: 7112 KB)
 Simulation CPU Usage: 0 ms

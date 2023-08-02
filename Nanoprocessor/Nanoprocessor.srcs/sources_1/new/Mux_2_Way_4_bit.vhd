@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -31,24 +32,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Mux_2_Way_4_bit is
+entity Mux_2_way_4_bit is
     Port ( A : in STD_LOGIC_VECTOR (3 downto 0);
            B : in STD_LOGIC_VECTOR (3 downto 0);
-           S : out STD_LOGIC_VECTOR (3 downto 0);
-           En : in STD_LOGIC);
-end Mux_2_Way_4_bit;
+           En : in STD_LOGIC;
+           S : out STD_LOGIC_VECTOR (3 downto 0));
+end Mux_2_way_4_bit;
 
-architecture Behavioral of Mux_2_Way_4_bit is
+architecture Behavioral of Mux_2_way_4_bit is
 
 begin
 
-    process (A,B,En)
-    begin
-        if En = '1' then
-            S <= A;
-        else
-            S <= B;
-        end if;
-    end process;
+S <= B when (En = '0') else A;
 
 end Behavioral;

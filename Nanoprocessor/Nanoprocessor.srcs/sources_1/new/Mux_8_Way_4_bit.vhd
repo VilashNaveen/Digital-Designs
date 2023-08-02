@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -47,28 +48,18 @@ entity Mux_8_Way_4_bit is
 end Mux_8_Way_4_bit;
 
 architecture Behavioral of Mux_8_Way_4_bit is
+    type rom_type is array (natural range <>) of std_logic_vector(3 downto 0);
+    
+    signal Mux_ROM : rom_type(0 to 7);
 begin
-    process (S, I_0, I_1, I_2, I_3, I_4, I_5, I_6, I_7)
-    begin
-        case S is
-            when "000" =>
-                Y <= I_0;
-            when "001" =>
-                Y <= I_1;
-            when "010" =>
-                Y <= I_2;
-            when "011" =>
-                Y <= I_3;
-            when "100" =>
-                Y <= I_4;
-            when "101" =>
-                Y <= I_5;
-            when "110" =>
-                Y <= I_6;
-            when "111" =>
-                Y <= I_7;
-            when others =>
-                Y <= (others => '0'); -- Default case
-        end case;
-    end process;
+    Mux_ROM(0) <= I_0;
+    Mux_ROM(1) <= I_1;
+    Mux_ROM(2) <= I_2;
+    Mux_ROM(3) <= I_3;
+    Mux_ROM(4) <= I_4;
+    Mux_ROM(5) <= I_5;
+    Mux_ROM(6) <= I_6;
+    Mux_ROM(7) <= I_7;
+
+    Y <= Mux_ROM(to_integer(unsigned(S)));
 end Behavioral;

@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -42,14 +43,6 @@ architecture Behavioral of Mux_2_Way_3_bit is
 
 begin
 
-process (A_3, A_J, Jmp)
-    begin
-        if Jmp = '1' then
-            S <= A_J;
-        else
-            S <= A_3;
-        end if;
-    end process;
+S <= A_3 when (Jmp = '0') else A_J;
     
-
 end Behavioral;

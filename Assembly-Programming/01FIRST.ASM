@@ -1,13 +1,18 @@
 ; ===== WORK OUT 2 PLUS 2 ======================================
-	CLO		; Close unwanted windows.
-	MOV AL,4	; Copy a 2 into the AL register.
-	MOV BL,8	; Copy a 2 into the BL register.
-	ADD AL,BL	; Add AL to BL. Answer goes into AL.
-	END		; Program ends
+START:
+	MOV AL,8	;
+	CALL 30  	;
+	MOV AL,10	;
+	CALL 30         ;
 ; ===== Program Ends ===========================================
-
-	YOUR TASK
-	=========
-	Use SUB, DIV and MUL to subtract, divide and multiply.
-	What happens if you divide by zero?
-	Make use of CL and DL as well as AL and BL.
+JMP START;
+	ORG 30;
+	PUSH AL;
+	PUSHF;
+REP:
+	DEC AL;
+	JNZ REP;
+	POPF;
+	POP AL;
+	RET;
+END;

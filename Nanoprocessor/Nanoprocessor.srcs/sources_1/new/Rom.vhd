@@ -57,7 +57,7 @@ begin
                     when "110" =>
                         data <= "000000000000";
                     when others =>
-                        data <= "000000000000";
+                        data <= "110000000000";
         end case;
     end process;
 
